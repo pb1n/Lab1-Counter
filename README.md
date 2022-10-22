@@ -20,3 +20,12 @@ The following waveforms were observed when changing the reset flag to be recogni
 
 ## Task 2 - Linking Verilator simulation with Vbuddy
 
+#### Observations when first linked: 
+Not counting, reason: incorrected code.
+Worked once corrected
+
+#### Linking rotary encode push button
+Worked. vbdFlag() is now a stimulus to the counter.
+
+## Task 3 - Vbuddy parameter & flag in one-shot mode
+
