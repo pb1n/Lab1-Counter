@@ -27,5 +27,10 @@ Worked once corrected
 #### Linking rotary encode push button
 Worked. vbdFlag() is now a stimulus to the counter.
 
+#### Test Yourself
+> else count <= count + {{WIDTH-1{1'b0}}, en} - {{WIDTH-1{1'b0}}, !en};
+
 ## Task 3 - Vbuddy parameter & flag in one-shot mode
+
+
 
