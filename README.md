@@ -41,7 +41,11 @@ What this essentially does is count up when en is 1, and down when en is 0.
 Observations:
 - The counter was set to the value of the EC-11 rotary encoder when it was pressed.
 
+#### Step 2
+- Removed ```v``` from the Counter, replaced ```ld``` with ```en```.
+- Changed the testbench to set ```en``` equal to the ```vbdFlag()```, enabling counting only when ```vbdFlag()``` is equal to 1.
 
+## Task 4 - Displaying count as Binary Coded Decimal (BCD) numbers
 
 
 
