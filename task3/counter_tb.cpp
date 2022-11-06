@@ -27,7 +27,7 @@ int main(int argc, char **argv, char **env) {
     //initialize simulation inputs
     top->clk = 1;
     top->rst = 0;
-    top->ld = 0;
+    top->en = 0;
 
     //run simulation for many clock cycles
     for (i=0; i<1000; i++) {
@@ -45,8 +45,7 @@ int main(int argc, char **argv, char **env) {
         // end of Vbuddy outpput section
 
         // change input stimuli
-        top->ld = vbdFlag();
-        top->v = vbdValue();
+        top->en = vbdFlag();
 
         if (Verilated::gotFinish()) exit(0);
     }
