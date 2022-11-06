@@ -27,7 +27,7 @@ From the above image, it can be seen that the counter resets immediately when a 
 - Works - vbdFlag() is now a stimulus to the counter.
 
 #### Test Yourself - Modifying the counter to count up when vbdFlag() is 1, and down when it is 0.
-To complete this task, I changed the behaviour of the en signal, and the following else statement was changed in the counter code from:
+To complete this task, I changed the behaviour of the en signal, and the following else statement was changed in the counter code from:  
 ```else     count <= count + {{WIDTH-1{1'b0}}, en};```  
 ...to:  
 ```else count <= count + {{WIDTH-1{1'b0}}, en} - {{WIDTH-1{1'b0}}, !en};```  
